@@ -1,0 +1,95 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.areaContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+  gap: 15px;
+}
+
+.matContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: solid lightgray;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.matDescrip {
+  display: grid;
+  grid-template-rows: min-content;
+}
+
+.matDescrip,
+.cortesDescrip,
+.opciones {
+  border: solid lightgray;
+}
+
+.matTittle {
+  display: grid;
+  justify-content: center;
+  background-color: #f3f3f3;
+  height: auto;
+}
+
+.tablaCortesBody td ~ input {
+  text-align: center;
+}
+
+.matUnits {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 25px;
+  background-color: #f3f3f3;
+  display: none;
+}
+
+.lienzoContainer {
+  display: grid;
+  border: solid lightgray;
+  width: 100vh;
+  row-gap: 15px;
+}
+
+.inputCut {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+.inputBut {
+  width: 100%;
+  height: 26px;
+  text-align: center;
+}
+
+.lienzo {
+  margin-left: 20px;
+  border-style: solid;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: lightgray;
+}
+
+.matData {
+  position: relative;
+}
+
+.calcButton {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}

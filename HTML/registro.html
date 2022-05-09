@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/registro.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- font-family: 'Roboto', sans-serif; -->
+	<title>Registro</title>
+</head>
+<body>
+	<main>
+		<h1>Registro</h1>
+		<form name="registroInsti" action="" method="post" onsubmit="return false">
+			<label for="name">
+				<input id="name_user" type="text" name="user" autofocus="autofocus" placeholder="Nombre" class="input">
+			</label>
+			<label for="correo">
+				<input id="e_mail" type="email" name="mail" placeholder="Correo Electronico" class="input" autocomplete="off">
+			</label>
+			<label for="cedula">
+				<input id="cedula" type="text" name="cedu" placeholder="Cedula" class="input" autocomplete="off">
+			</label>
+			<label for="password">
+				<input id="pessw" type="password" name="pass" placeholder="Contraseña" class="input" autocomplete="off">
+			</label>
+			<label for="password">
+				<input id="r_pessw" type="password" name="pass2" placeholder="Repite contraseña" class="input" autocomplete="off">
+			</label>
+			<label for="perfil">
+				<input list="perfil" type="text" name="perfil" placeholder="perfil" class="input" autocomplete="off">
+				<datalist id="perfil" class="input">
+					<option>Administrador</option>
+					<option>Empleado</option>
+				</select>
+			</label>
+			<button id="btn-agregar">Registrarme</button>
+		</form>
+	</main>
+	<script src="../src/js/registro.js"></script>
+</body>
+</html>

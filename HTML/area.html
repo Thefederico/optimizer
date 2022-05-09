@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/area.css" />
+  </head>
+  <body>
+    <div class="areaContainer">
+      <div class="matContainer">
+        <div class="matOciones">
+          <div class="matTittle">
+            <h2>Especificaciones del material</h2>
+          </div>
+          <div class="matUnits"></div>
+          <div class="matData">
+            <table>
+              <thead>
+                <tr class="tablaCortesHeader">
+                  <th>Ref</th>
+                  <th>Ancho</th>
+                  <th>Largo</th>
+                  <th>Cant</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tablaCortesBody">
+                  <td><input type="text" name="ref" id="refMaterial" class="inputCut"></td>
+                  <td><input type="number" name="ancho" id="anchoMaterial" class="inputCut"></td>
+                  <td><input type="number" name="largo" id="largoMaterial" class="inputCut"></td>
+                  <td><input type="number" name="cant" id="cantMaterial" class="inputCut"></td>
+                  <td><input type="button" name="add"  id="addMaterial" class="inputBut" value="+"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="matDescrip">
+          <div class="matTittle">
+            <h2>Dimensiones material</h2>
+          </div>
+          <div class="matData">
+            <table id="cutTable">
+              <thead>
+                <tr class="tablaCortesHeader">
+                  <th>Ref</th>
+                  <th>Ancho</th>
+                  <th>Largo</th>
+                  <th>Cant</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+                <tr class="tablaCortesBody cortes">
+                  <td><input type="text" name="ref" id="" class="inputCut"></td>
+                  <td><input type="number" name="ancho" id="" class="inputCut"></td>
+                  <td><input type="number" name="largo" id="" class="inputCut"></td>
+                  <td><input type="number" name="cant" id="" class="inputCut"></td>
+                  <td><input type="button" name="add" id="addCutButton" class="inputBut" value="+"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="calcButton">
+              <button type="button" id="btnCalcular">Calcular</button>
+            </div>
+          </div>
+        </div>
+        <div class="cortesDescrip">
+          <div class="matTittle">
+            <h2>Listado de cortes</h2>
+          </div>
+          <div class="matUnits"></div>
+          <div class="matData"></div>
+        </div>
+      </div>
+      <div id="lienzoContainer" class="lienzoContainer">
+        <canvas id="lienzo" class="lienzo"></canvas>
+      </div>
+      <script src="../src/js/area.js"></script>
+    </div>
+  </body>
+</html>
